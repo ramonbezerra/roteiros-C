@@ -36,7 +36,7 @@ Logo, se uma variável está definida fora das funções, é de escopo global, s
 
 **Exercício 1**: Escreva um código que pede um número ao usuário, e, em seguida, mostre a mensagem "O número informado foi [número]". Esse número deve ser armazenado em uma variável global.
 
-**Exercício 2**: Reescreva o programa do exercício 2, sendo que, as variáveis que representam os números recebidos do usuário devem ser de escopo global e, o resultado final, deve ser de escopo local.
+**Exercício 2**: Reescreva o programa do **exercício 2 do Lab 0**, sendo que, as variáveis que representam os números recebidos do usuário devem ser de escopo global e, o resultado final, deve ser de escopo local.
 
 ## Tipos de Dados
 
