@@ -137,7 +137,7 @@ int main()
   int sum = 0; 
   sum = integer1 + integer2;
 
-  printf(sum);
+  printf("%d", sum);
 }
 ```
 
