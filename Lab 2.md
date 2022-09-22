@@ -1,6 +1,6 @@
 # Lab 2
 
-Aprofundando nossos conhecimentos na linguagem C, veremos o poder dos operadores e o incremento de mainionalidades dos nossos programas com a adição de fluxos condicionais.
+Aprofundando nossos conhecimentos na linguagem C, veremos o poder dos operadores e o incremento de funcionalidades dos nossos programas com a adição de fluxos condicionais.
 
 ## Antes de tudo, os tipos
 
