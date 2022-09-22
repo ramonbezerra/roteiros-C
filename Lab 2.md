@@ -280,4 +280,4 @@ int main() {
 
 **Exercício 4**: Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
 
-**Desafio 2**: Faça um Programa que pergunte em que turno você estuda. Peça para digitar M-matutino ou V-Vespertino ou N- Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
+**Desafio 2**: Faça um Programa que pergunte em que turno você estuda. Peça para digitar 1-matutino ou 2-Vespertino ou 3-Noturno. Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inválido!", conforme o caso.
