@@ -93,18 +93,18 @@ Sua estrutura básica conta com os seguintes comandos:
 ```
 switch (expr) {
   case const1:
-		sequência de comandos;
-		break;
+	sequência de comandos;
+	break;
   case const2:
-		sequência de comandos;
-		break;
+	sequência de comandos;
+	break;
 	...
   case constn:
   	sequência de comandos;
-		break;
-	default:
-		sequência de comandos;
-    break;
+	break;
+  default:
+	sequência de comandos;
+    	break;
 }
 ```
 
