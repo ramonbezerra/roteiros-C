@@ -14,8 +14,8 @@ Práticas associadas à disciplina de Linguagem de Programação I. Programaçã
 
 ## Avaliação
 
-- Exercícios (Labs) irão compor 40% da nota.
-- Os outros 60% serão compostos por projetos práticos em equipe.
+- Exercícios (Labs) irão compor 40% da nota (deverão ser entregues até no máximo a aula seguinte).
+- Os outros 60% serão compostos por projetos práticos em equipe (pode ser até de 3 integrantes).
 
 ## Horários
 
