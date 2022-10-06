@@ -19,8 +19,8 @@ Práticas associadas à disciplina de Linguagem de Programação I. Programaçã
 
 ## Horários
 
-- Terças, às 14h
-- Quintas, às 16h
+- Terças (remoto)
+- Quintas, às 14h (turma 2) e às 16h (turma 1)
 
 ## Comunicação
 
