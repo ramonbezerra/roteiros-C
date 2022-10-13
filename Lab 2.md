@@ -164,10 +164,10 @@ E em seguida, os operadores relativos:
 
 Operador | Exemplo | Condição avaliada
 -- | -- | --
-> | x > y | `x` é maior a `y`
-< | x < y | `x` é menor a `y`
->= | x >= y | `x` é maior ou igual a `y`
-<= | x <= y | `x` é menor ou igual a `y`
+Operador > | x > y | `x` é maior a `y`
+Operador < | x < y | `x` é menor a `y`
+Operador >= | x >= y | `x` é maior ou igual a `y`
+Operador <= | x <= y | `x` é menor ou igual a `y`
 
 Os operadores retornam o resultado inteiro, sendo o resultado 0 quando a expressão é falsa e 1 quando verdadeira. Para testar, vamos imprimir como no exemplo:
 
