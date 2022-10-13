@@ -233,7 +233,7 @@ float calculaPesoIdeal(float altura) { // definição
 }
 ```
 
-Note que "escondemos" o cálculo do peso ideal da função principal. Se houver alguma mudança interna, 
+Note que "escondemos" o cálculo do peso ideal da função principal. Se houver alguma mudança interna, ela ficará encapsulada na função, cumprindo, assim, com boas práticas de código.
 
 **Exercício 2**: Defina uma função que retorna o maior dentre 4 números inteiros passados como parâmetro.
 
