@@ -157,38 +157,6 @@ Ela resolve o nosso problema. Porém, se quisermos que a função apenas execute
 ```
 #include <stdio.h>
 
-int numero = 0;
-
-int main()
-{  
-  float altura = 0.0;
-  printf("Digite sua altura: ");
-  scanf("%f", &altura);
-  
-  float pesoIdeal = (72.7*altura) - 58;
-  printf("O seu peso ideal é %.3f", pesoIdeal);
-
-  float altura = 0.0;
-  printf("Digite sua altura: ");
-  scanf("%f", &altura);
-  
-  float pesoIdeal = (72.7*altura) - 58;
-  printf("O seu peso ideal é %.3f", pesoIdeal);
-
-  // ... ?
-  return 0;
-}
-```
-
-Sim, mas não a melhor. Até, por que, se essa funcionalidade fosse invocada várias vezes em laços ou em condicionais, por exemplo, ficaria ainda mais difícil de manter e controlar qualquer mudança no código.
-
-Vamos então criar uma função para informar qual o peso ideal de qualquer pessoa. Inicialmente, podemos extrair todo o código envolvido na solução para uma definição em um bloco à parte:
-
-```
-#include <stdio.h>
-
-int numero = 0;
-
 float calculaPesoIdeal(); // prototype 
 
 int main()
@@ -210,8 +178,6 @@ float calculaPesoIdeal() { // definição
 
 ```
 #include <stdio.h>
-
-int numero = 0;
 
 float calculaPesoIdeal(float altura); // prototype 
 
