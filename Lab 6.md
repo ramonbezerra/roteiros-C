@@ -203,7 +203,7 @@ Note que "escondemos" o cálculo do peso ideal da função principal. Se houver 
 
 **Exercício 2**: Defina uma função que retorna o maior dentre 4 números inteiros passados como parâmetro.
 
-**Exercício 3**: Modifique o exemplo da função do cálculo de peso para inserir condições entre peso ideal para mulheres e homens, resgatando a fórmula passada em um roteiro anterior.
+**Exercício 3**: Modifique o exemplo da função do cálculo de peso para inserir condições entre peso ideal para mulheres e homens, aplicando as seguintes fórmulas - mulheres: (62.1\*altura) - 44.7 e  homens: (72.7*altura) - 58.
 
 **Desafio 1**: Faça um programa que converta da notação de 24 horas para a notação de 12 horas. Por exemplo, o programa deve converter 14:25 em 2:25 P.M. A entrada é dada em dois inteiros. Seu programa deve contar com duas funções: uma para fazer a conversão e uma para a saída. Registre a informação A.M./P.M. como um valor ‘A’ para A.M. e ‘P’ para P.M. Assim, a função para efetuar as conversões terá um parâmetro formal para registrar se é A.M. ou P.M. Inclua um loop que permita que o usuário repita esse cálculo para novos valores de entrada todas as vezes que desejar.
 
