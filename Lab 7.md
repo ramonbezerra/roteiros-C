@@ -160,4 +160,7 @@ Note que o caso base se parece com a condição de parada de um laço, tendo a m
 
 **Exercício 3**: Escreva uma função recursiva para calcular a somatória de todos os números de 1 até um determinado número n passado como parâmetro.
 
-**Desafio 2**: Escreva uma função recursiva que resolva o problema da sequência de Fibonacci. 
+**Desafio 2**: Escreva uma função recursiva que resolva o problema da sequência de Fibonacci, passando como parâmetro o número da sequência que se deseja obter.
+
+**Desafio 3**: Amplie o código do Desafio 1 deste roteiro para avaliar quantos números primos existem entre 1 e 100.
+
