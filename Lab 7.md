@@ -150,6 +150,10 @@ double fatorial(int n)
 }
 ```
 
+A execução desse código, de forma ilustrada, pode ser compreendida pela figura a seguir: 
+
+![](fibonacci.png)
+
 Note que o caso base se parece com a condição de parada de um laço, tendo a mesma função: impedir que o programa entre em loop infinito, estourando a memória. Logo, toda vez que tiver dificuldade de resolver uma função recursiva, uma alternativa é pensar na implementação iterativa. 
 
 **Exercício 2**: Escreva uma função recursiva `imprimeCubos` que recebe um valor e imprime os cubos de 1 até este valor (inclusive). Por exemplo, ao receber o valor 3, serão impressos 1, 8 e 27.
