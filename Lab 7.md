@@ -41,6 +41,8 @@ int maximo(int x, int y, int z)
 **Exercício 1**: Escreva uma função para verificar se um ano é bissexto ou não. Utilize a seguinte regra: um ano bissexto é divisível por 4, mas não por 100, ou então é divisível por 400.
 Exemplo: 1988 é bissexto pois é divisível por 4 e não é por 100; 2000 é bissexto porque é divisível por 400.
 
+**Exercício 2**: Escreva uma função chamada `imprimePotencias` que recebe três parâmetros: você irá fornecer o valor limitante inicial, o valor limitante final e qual será o expoente (nesta ordem). Por exemplo, ao receber os números 2, 5 e 2, serão impressos 4, 9, 16 e 25.
+
 **Desafio 1**: Construa uma função que recebe um número inteiro como parâmetro e retorna 1 se ele for primo e 0 caso não seja. Dica: Para avaliar se um número é primo, utilize o Crivo de Erastóstenes.
 
 ## Recursividade
@@ -156,8 +158,6 @@ A execução desse código, de forma ilustrada, pode ser compreendida pela figur
 
 Note que o caso base se parece com a condição de parada de um laço, tendo a mesma função: impedir que o programa entre em loop infinito, estourando a memória. Logo, toda vez que tiver dificuldade de resolver uma função recursiva, uma alternativa é pensar na implementação iterativa. 
 
-**Exercício 2**: Escreva uma função recursiva `imprimeCubos` que recebe um valor e imprime os cubos de 1 até este valor (inclusive). Por exemplo, ao receber o valor 3, serão impressos 1, 8 e 27.
-
-**Exercício 3**: Amplie o código anterior com uma nova função recursiva chamada `imprimePotencias` para receber três parâmetros: você irá fornecer o valor limitante inicial, o valor limitante final e qual será o expoente (nesta ordem). Por exemplo, ao receber os números 2, 5 e 2, serão impressos 4, 9, 16 e 25.
+**Exercício 3**: Escreva uma função recursiva para calcular a somatória de todos os números de 1 até um determinado número n passado como parâmetro.
 
 **Desafio 2**: Escreva uma função recursiva que resolva o problema da sequência de Fibonacci. 
