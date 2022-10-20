@@ -158,6 +158,6 @@ Note que o caso base se parece com a condição de parada de um laço, tendo a m
 
 **Exercício 2**: Escreva uma função recursiva `imprimeCubos` que recebe um valor e imprime os cubos de 1 até este valor (inclusive). Por exemplo, ao receber o valor 3, serão impressos 1, 8 e 27.
 
-**Exercício 3**: Amplie o código anterior com uma nova função recursiva chamada `imprimePotencias` para receber três parâmetros: você irá fornecer o valor limitante inicial e qual será o expoente, além do valor limitante final (nesta ordem). Por exemplo, ao receber os números 2, 5 e 2, serão impressos 4, 9, 16 e 25.
+**Exercício 3**: Amplie o código anterior com uma nova função recursiva chamada `imprimePotencias` para receber três parâmetros: você irá fornecer o valor limitante inicial, o valor limitante final e qual será o expoente (nesta ordem). Por exemplo, ao receber os números 2, 5 e 2, serão impressos 4, 9, 16 e 25.
 
 **Desafio 2**: Escreva uma função recursiva que resolva o problema da sequência de Fibonacci. 
