@@ -241,7 +241,7 @@ Resumindo:
 - O valor `programacao` no primeiro caso é armazenado uma seção contígua de memória; no segundo caso, numa seção de código de memória;
 - Não é possível alterar o array `palavra` para um valor de tamanho maior do que o definido, enquanto que, no ponteiro, é permitido;
 - Não é válido usar operador de incremento ou decremento no array `palavra`, enquanto que no ponteiro é válido;
-- 
+- É permitido redefinir o tamanho na declaração do array, enquanto que o tamanho do ponteiro é somente leitura.
 
 **Desafio 1**: Baseado no exemplo a seguir, elabore uma função que recebe uma string e retorna quantas vogais e quantas consoantes ela possui. Lembre-se de utilizar passagem de parâmetro como referência. 
 
