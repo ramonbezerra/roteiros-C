@@ -178,6 +178,71 @@ Lembrou de algo parecido que já utilizamos? Isso mesmo, a função `scanf` do p
 
 **Exercício 2**: Utilizando a mesma lógica do exemplo anterior, utilizando passagem por referência, crie uma função que, recebendo do usuário o valor do raio, calcula o perímetro (2\*pi*raio) e a área (pi\*raio²) de um círculo. Considere pi = 3.14.
 
+### Uso de ponteiros com strings
+
+Considere abaixo duas declarações em C. Qual é a diferença entre as duas?
+
+```
+char palavra[] = "programacao";
+char *palavra  = "programacao";
+```
+
+A variável `char palavra[] = "programacao"` criam uma matriz (array) de caracteres que é como qualquer outra matriz, e sobre essa variável podemos fazer todas as operações de matriz. A única coisa especial sobre este array é que, embora tenhamos inicializado com 11 elementos, seu tamanho é 12 (o compilador adiciona automaticamente '\0').
+
+```
+#include <stdio.h>
+int main()
+{
+    char palavra[] = "programacao";
+    printf("%lu\n", sizeof(palavra));
+    palavra[0] = 'P';
+    printf("%s", palavra);
+    return 0;
+}
+```
+
+A saída do código anterior é: 
+
+```
+12
+Programacao
+```
+
+A instrução `char *palavra  = "programacao"` cria uma string literal. Uma string literal é armazenada na parte somente leitura da memória pela maioria dos compiladores. Os padrões C e C++ dizem que as strings literais têm duração de armazenamento estática, qualquer tentativa de modificá-los gera um comportamento indefinido.
+
+Logo, `palavra` é apenas um ponteiro e, como qualquer outro ponteiro, armazena o endereço da string literal.
+
+```
+#include <stdio.h>
+int main()
+{
+    char *palavra = "programacao";
+    printf("%lu\n", sizeof(palavra));
+
+    // As linhas abaixo podem gerar erro ou nenhum efeito
+    // palavra[0] = 'P';
+    // printf("%s", palavra);
+    
+    return 0;
+}
+```
+
+A saída do código anterior é: 
+
+```
+8
+```
+
+Resumindo: 
+
+- O primeiro é um array, o segundo é um ponteiro;
+- O tamanho do primeiro é dado pelo número de caracteres; o do segundo, pela quantidade de bytes na memória;
+- `palavra` e `&palavra` são a mesma coisa, mas `palavra` e `*palavra` não são;
+- O valor `programacao` no primeiro caso é armazenado uma seção contígua de memória; no segundo caso, numa seção de código de memória;
+- Não é possível alterar o array `palavra` para um valor de tamanho maior do que o definido, enquanto que, no ponteiro, é permitido;
+- Não é válido usar operador de incremento ou decremento no array `palavra`, enquanto que no ponteiro é válido;
+- 
+
 **Desafio 1**: Baseado no exemplo a seguir, elabore uma função que recebe uma string e retorna quantas vogais e quantas consoantes ela possui. Lembre-se de utilizar passagem de parâmetro como referência. 
 
 ```
