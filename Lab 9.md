@@ -76,8 +76,8 @@ Durante a execução do código anterior, você encontrará um resultado semelha
 ```
 O endereço de a é 0x7ffda3501604 
 O valor de aPtr é 0x7ffda3501604
-O valor de a é 0x7 
-O valor de aPtr é 0x7
+O valor de a é 7 
+O valor de aPtr é 7
 &*aPtr = 0x7ffda3501604
 *&aPtr = 0x7ffda3501604
 ```
