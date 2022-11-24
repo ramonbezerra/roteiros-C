@@ -2,6 +2,8 @@
 
 ## Recapitulando: uso de ponteiros
 
+Ponteiros são usados para acessar o endereço de memória das variáveis, fazendo um controle de mais baixo nível. Por exemplo:
+
 ```
 #include <stdio.h>
 
@@ -30,6 +32,8 @@ Endereço de x = 0x7ffdd971f84c - Valor de x = 10
 Endereço de y = 0x7ffdd971f840 - Valor de y = 20.50
 Endereço de z = 0x7ffdd971f83f - Valor de z = 97
 ```
+
+Ao contrário da declaração de variáveis, com ponteiros é preciso ter atenção aos sinais utilizados para indicar o apontamento e o desreferenciamento:
 
 ```
 #include <stdio.h>
@@ -79,8 +83,6 @@ O resultado deste código é:
 Soma = 30.50
 ```
 O que aconteceu para esse resultado é que temos o acesso aos valores nos endereços de memória indicados pelos ponteiros `xPtr` e `yPtr`. O sinal `*` acessa o valor a partir do ponteiro.
-
-**Exercício 1**: 
 
 ## Incrementando os ponteiros com o qualificador const
 
@@ -155,7 +157,7 @@ void imprimeCaracteres(const char *sPtr) {
 
 A função `imprimeCaracteres` declara o parâmetro `sPtr` como sendo do tipo `const char *`. A declaração é lida da direita para a esquerda como “sPtr é um ponteiro para uma constante de caractere”. A estrutura de repetição contida na função exibe cada caractere até encontrar um caractere nulo. Depois de exibir cada caractere, o loop incrementa o ponteiro sPtr para apontar para o próximo caractere da string.
 
-**Exercício 2**: Mude o núcleo da função `imprimeCaracteres` para alguma instrução que modifique cada caractere, usando o operador de desreferenciamento, e anote no código, usando comentários, qual o erro que apareceu.
+**Exercício 1**: Mude o núcleo da função `imprimeCaracteres` para alguma instrução que modifique cada caractere, usando o operador de desreferenciamento, e anote no código, usando comentários, qual o erro que apareceu.
 
 ### Tentando modificar um ponteiro constante para dados não constantes
 
@@ -180,7 +182,7 @@ int main(void) {
 
 O ponteiro `ptr` é definido no exemplo anterior como sendo do tipo `int *const`, que é lido da direita para a esquerda como “ptr é um ponteiro constante para um inteiro”. Depois de  é inicializado (linha 11) com o endereço da variável inteira x. O programa tenta atribuir o endereço de y a ptr (linha 14), mas o compilador gera um erro.
 
-**Exercício 3**: Crie uma função análoga ao primeiro exemplo, que imprime todas as letras minúsculas, usando um ponteiro do tipo `char *const` e anote com comentários o que acontece.
+**Exercício 2**: Crie uma função análoga ao primeiro exemplo, que imprime todas as letras minúsculas, usando um ponteiro do tipo `char *const` e anote com comentários o que acontece.
 
 ### Tentando modificar um ponteiro constante para dados constantes
 
@@ -207,7 +209,7 @@ int main(void) {
 }
 ```
 
-**Exercício 4**: Modifique a função do exercício anterior, que imprime todas as letras minúsculas, para, desta vez, usar um ponteiro do tipo `const char *const` e anote com comentários o que acontece.
+**Exercício 3**: Modifique a função do exercício anterior, que imprime todas as letras minúsculas, para, desta vez, usar um ponteiro do tipo `const char *const` e anote com comentários o que acontece.
 
 ## Arrays e Ponteiros
 
@@ -253,4 +255,4 @@ int main(void) {
 
 É possível percorrer um array da mesma forma que fizemos com as strings, e acessar os valores a partir do incremento do ponteiro.
 
-**Exercício 5**: Baseado no exemplo anterior e no que discutimos sobre strings, elabore um programa que percorra arrays dos seguintes tipos: float, double e char. Usando comentários, responda: o que pode-se notar quando acessamos o endereço de memória a cada iteração de cada um desses arrays? 
+**Exercício 4**: Baseado no exemplo anterior e no que discutimos sobre strings, elabore um programa que percorra arrays dos seguintes tipos: float, double e char. Usando comentários, responda: o que pode-se notar quando acessamos o endereço de memória a cada iteração de cada um desses arrays? 
